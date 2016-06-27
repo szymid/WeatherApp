@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Abel-Regular.ttf">
+            <string>Abel-Regular</string>
+            <string>Abel-Regular</string>
+            <string>Abel-Regular</string>
+        </mutableArray>
+        <mutableArray key="Walkway Condensed.ttf">
+            <string>WalkwayCondensed</string>
+            <string>WalkwayCondensed</string>
+            <string>WalkwayCondensed</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainWeatherViewController" id="BYZ-38-t0r" customClass="WeatherViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clo-QP-NzV">
+                                <rect key="frame" x="134" y="383" width="107" height="113"/>
+                                <fontDescription key="fontDescription" name="WalkwayCondensed" family="Walkway Condensed" pointSize="107"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.66666666669999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kraków" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUt-U6-ogo">
+                                <rect key="frame" x="34" y="286" width="307" height="96"/>
+                                <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="75"/>
+                                <color key="textColor" red="0.26666666666666666" green="0.34901960784313724" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAG-hk-xiO">
+                                <rect key="frame" x="-4" y="20" width="383" height="242"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="242" preservesSuperviewLayoutMargins="YES" image="sun_white" translatesAutoresizingMaskIntoConstraints="NO" id="nei-pc-QI2">
+                                        <rect key="frame" x="-4" y="0.0" width="391" height="242"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.66666666669999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nei-pc-QI2" firstAttribute="centerY" secondItem="LAG-hk-xiO" secondAttribute="centerY" id="CPa-Bd-EkJ"/>
+                                    <constraint firstItem="nei-pc-QI2" firstAttribute="leading" secondItem="LAG-hk-xiO" secondAttribute="leading" constant="-4" id="HTY-AL-fOu"/>
+                                    <constraint firstItem="nei-pc-QI2" firstAttribute="centerX" secondItem="LAG-hk-xiO" secondAttribute="centerX" id="lgs-7n-b0G"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlR-MY-PLB">
+                                <rect key="frame" x="134" y="489" width="36" height="38"/>
+                                <fontDescription key="fontDescription" name="WalkwayCondensed" family="Walkway Condensed" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb5-GQ-NsB">
+                                <rect key="frame" x="178" y="489" width="41" height="38"/>
+                                <fontDescription key="fontDescription" name="WalkwayCondensed" family="Walkway Condensed" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNS-NX-fPQ">
+                                <rect key="frame" x="134" y="538" width="27" height="25"/>
+                                <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icg-J5-xSx">
+                                <rect key="frame" x="178" y="538" width="31" height="25"/>
+                                <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qb5-GQ-NsB" firstAttribute="leading" secondItem="HlR-MY-PLB" secondAttribute="trailing" constant="8" id="2AD-l8-8Wv"/>
+                            <constraint firstItem="aNS-NX-fPQ" firstAttribute="top" secondItem="HlR-MY-PLB" secondAttribute="bottom" constant="11" id="4rv-q7-fUh"/>
+                            <constraint firstItem="zUt-U6-ogo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DMS-l0-SMY"/>
+                            <constraint firstItem="Qb5-GQ-NsB" firstAttribute="top" secondItem="Clo-QP-NzV" secondAttribute="bottom" constant="-7" id="GXA-Fm-1dN"/>
+                            <constraint firstItem="LAG-hk-xiO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gkp-zz-GIp"/>
+                            <constraint firstItem="zUt-U6-ogo" firstAttribute="top" secondItem="LAG-hk-xiO" secondAttribute="bottom" constant="24" id="I3o-MF-vWJ"/>
+                            <constraint firstItem="Clo-QP-NzV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LAI-eC-D9C"/>
+                            <constraint firstItem="icg-J5-xSx" firstAttribute="centerY" secondItem="aNS-NX-fPQ" secondAttribute="centerY" id="MGP-hX-cL9"/>
+                            <constraint firstItem="zUt-U6-ogo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="NvB-4w-vtG"/>
+                            <constraint firstItem="zUt-U6-ogo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OQE-7t-n5b"/>
+                            <constraint firstItem="LAG-hk-xiO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PtE-Qg-EAj"/>
+                            <constraint firstItem="Clo-QP-NzV" firstAttribute="top" secondItem="zUt-U6-ogo" secondAttribute="bottom" constant="1" id="Udk-EG-EdD"/>
+                            <constraint firstItem="HlR-MY-PLB" firstAttribute="leading" secondItem="Clo-QP-NzV" secondAttribute="leading" id="VUI-LR-fh5"/>
+                            <constraint firstItem="icg-J5-xSx" firstAttribute="leading" secondItem="Qb5-GQ-NsB" secondAttribute="leading" id="XUl-sW-PdJ"/>
+                            <constraint firstItem="LAG-hk-xiO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dlY-eP-ILd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zUt-U6-ogo" secondAttribute="trailing" constant="16" id="jTm-M7-aQR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LAG-hk-xiO" secondAttribute="trailing" constant="-20" id="vIx-hF-Lr9"/>
+                            <constraint firstItem="aNS-NX-fPQ" firstAttribute="leading" secondItem="HlR-MY-PLB" secondAttribute="leading" id="y4Y-qn-m6z"/>
+                            <constraint firstItem="HlR-MY-PLB" firstAttribute="top" secondItem="Clo-QP-NzV" secondAttribute="bottom" constant="-7" id="z3A-dR-sMS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jTm-M7-aQR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="zUt-U6-ogo" id="uEV-OV-2Jr"/>
+                        <outlet property="iconBackgroundView" destination="LAG-hk-xiO" id="Ca0-S5-VfF"/>
+                        <outlet property="maxTempLabel" destination="Qb5-GQ-NsB" id="Kir-pk-nwg"/>
+                        <outlet property="minTempLabel" destination="HlR-MY-PLB" id="piB-bK-lce"/>
+                        <outlet property="tempLabel" destination="Clo-QP-NzV" id="Gyy-9h-xoD"/>
+                        <outlet property="weatherIconImage" destination="nei-pc-QI2" id="i6M-QH-UnX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.5" y="-49.5"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Ang-SU-5NI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Ndh-7h-BPc" customClass="PageViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8z-bf-n0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sun_white" width="150" height="150"/>
+    </resources>
+</document>

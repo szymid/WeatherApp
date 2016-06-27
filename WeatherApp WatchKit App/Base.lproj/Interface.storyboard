@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Abel-Regular.ttf">
+            <string>Abel-Regular</string>
+        </mutableArray>
+        <mutableArray key="Walkway Condensed.ttf">
+            <string>WalkwayCondensed</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WeatherApp" customModuleProvider="target">
+                    <items>
+                        <imageView width="136" height="75" alignment="left" image="01d" contentMode="scaleAspectFit" id="zZi-EU-s1V">
+                            <color key="tintColor" red="0.98039215690000003" green="0.66666666669999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <label width="136" alignment="left" text="Kraków" textAlignment="center" id="v27-eZ-iD2">
+                            <fontDescription key="font" name="Abel-Regular" family="Abel" pointSize="20"/>
+                        </label>
+                        <label width="136" height="23.5" alignment="left" text="17°" textAlignment="center" id="qEj-by-RVb">
+                            <fontDescription key="font" name="WalkwayCondensed" family="Walkway Condensed" pointSize="32"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.66666666669999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="v27-eZ-iD2" id="UFo-cf-Dzi"/>
+                        <outlet property="tempLabel" destination="qEj-by-RVb" id="wTp-fA-R0z"/>
+                        <outlet property="weatherIconImage" destination="zZi-EU-s1V" id="YEi-sA-mY4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+    </scenes>
+</document>
